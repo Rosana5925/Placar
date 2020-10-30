@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/placar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:context=".MainActivity">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="TeamA"
+                android:textSize="20dp"
+                android:textColor="#008000"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_margin="8dp"
+                android:text="Golos"
+                android:textAllCaps="true"
+                android:onClick="goloTeamA"/>
+
+            <TextView
+                android:id="@+id/golos_TeamA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textSize="56dp"
+                android:text="0"
+                android:gravity="center_horizontal"
+                android:textColor="#008000"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Faltas"
+                android:textAllCaps="true"
+                android:onClick="faltaTeamA"
+                android:gravity="center_horizontal"/>
+
+
+            <TextView
+                android:id="@+id/faltaTeamA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textSize="30dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:text="Penaltis"
+                android:textAllCaps="true"
+                android:onClick="penaltiTeamA"/>
+
+            <TextView
+                android:id="@+id/penaltiTeamA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:gravity="center_horizontal"
+                android:text="0"
+                />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:text="Cantos"
+                android:textAllCaps="true"
+                android:onClick="cantoTeamA"/>
+
+            <TextView
+                android:id="@+id/cantoTeamA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:gravity="center_horizontal"
+                android:text="0" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:text="Autogolos"
+                android:textAllCaps="true"
+                android:onClick="autogoloTeamA"/>
+
+            <TextView
+                android:id="@+id/autogoloTeamA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:gravity="center_horizontal"
+                android:text="0" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:text="Livres"
+                android:textAllCaps="true"
+                android:onClick="livresTeamA"/>
+
+            <TextView
+                android:id="@+id/livreTeamA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="30dp"
+                android:text="0" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="TeamB"
+                android:textSize="20dp"
+                android:textColor="#863427"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center_horizontal"
+                android:text="Golos"
+                android:textAllCaps="true"
+                android:onClick="goloTeamB"/>
+
+            <TextView
+                android:id="@+id/golos_TeamB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textSize="56dp"
+                android:text="0"
+                android:gravity="center_horizontal"
+                android:textColor="#863427"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Faltas"
+                android:textAllCaps="true"
+                android:onClick="faltaTeamB"
+                android:gravity="center_horizontal"/>
+
+
+            <TextView
+                android:id="@+id/faltaTeamB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:gravity="center_horizontal"
+                android:text="0" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:text="Penaltis"
+                android:textAllCaps="true"
+                android:onClick="penaltiTeamB"/>
+
+            <TextView
+                android:id="@+id/penaltiTeamB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:gravity="center_horizontal"
+                android:text="0" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:text="Cantos"
+                android:textAllCaps="true"
+                android:onClick="cantoTeamB"/>
+
+            <TextView
+                android:id="@+id/cantoTeamB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:gravity="center_horizontal"
+                android:text="0" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:text="Autogolos"
+                android:textAllCaps="true"
+                android:onClick="autogoloTeamB"/>
+
+            <TextView
+                android:id="@+id/autogoloTeamB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:gravity="center_horizontal"
+                android:text="0" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:text="Livres"
+                android:textAllCaps="true"
+                android:onClick="livresTeamB"/>
+
+            <TextView
+                android:id="@+id/livreTeamB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:gravity="center_horizontal"
+                android:text="0" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reiniciar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="ReiniciarPlacar"/>
+
+</RelativeLayout>
